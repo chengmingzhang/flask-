@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            height: 250px;
+            background: url("{{ url_for('static', filename='bg.jpg')}}");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1{
+            color: azure;
+            text-align: center;
+            line-height: 250px;
+            margin-top: 0;
+        }
+        .content{
+            width: 400px;
+            {#background-color: blue;#}
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+<div class="header">
+    <h1>我的首页</h1>
+</div>
+<div class="content">
+    <div>
+        <a href='/add_blog/' class="btn btn-warning pull-right">写日记</a>
+        <div class="'clearfix"></div>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>标题</th>
+        </tr>
+        </thead>
+        <tr>
+            <td><a href="/blog_detail/">开心</a></td>
+        </tr>
+        <tr>
+            <td><a href="/blog_detail/">不开心</a></td>
+        </tr>
+        <tr>
+            <td><a href="/blog_detail/">很开心</a></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
